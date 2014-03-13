@@ -1,0 +1,3 @@
+<%= @errors.each do |error, value| %>
+  <%= "$('.js-error-#{ error }').html('#{ value.first }');" %>
+<% end %>

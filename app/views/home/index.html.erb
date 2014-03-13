@@ -1,0 +1,42 @@
+<div class="container phm mtxxl">
+  <div class="row nmhm mtxxl">
+    <div class="col-md-6 phm text-center">
+      <div class="fsxxl">Shindy!</div>
+      <div class="fsl">
+        FIND AND SHARE THE<br/>
+        NEXT BEST FESTIVAL OR CLUB
+      </div>
+      <div class="mtxs">
+        <span class="fsxxxs c-16 bg-8 bram phs pvxxs">
+          LEARN MORE <i class="icon-arrow-right"></i>
+        </span>
+      </div>
+      <div class="video-container mtm">
+        <iframe src="//www.youtube.com/embed/YQvyb4-rppE" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="col-md-6 phm">
+      <div class="row nmhxs">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="pas bg-4 bras">
+            <div class="c-16 fsm text-center">WELCOME</div>
+            <div class="relative dvxxl mts">
+              <div class="c-16 fsxxl text-center">TO THE FAMILY</div>
+              <div class="ribbon bg-16 pvxs fsxxxxl text-center js-signup-ribbon">
+                <div class="js-signup-ribbon-count">
+                  <%= number_with_delimiter(signups_left, :delimiter => ',') %>
+                </div>
+              </div>
+            </div>
+            <div class="c-16 fsxxl text-center mtxxs">
+              SIGN UPS LEFT<br/>UNTIL OUR RELEASE!
+            </div>
+            <div class="mtxxxs">
+              <%= render partial: "users/form" %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

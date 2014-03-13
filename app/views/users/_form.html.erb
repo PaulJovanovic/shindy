@@ -1,0 +1,9 @@
+<div class="no-overflow js-user-form">
+  <%= form_for(@user, remote: true) do |f| %>
+    <%= f.text_field :full_name, placeholder: "FULL NAME", class: "braxs js-user-full_name" %>
+    <div class="js-error-full_name mbs"></div>
+    <%= f.text_field :email, placeholder: "EMAIL", class: "braxs js-user-email" %>
+    <div class="js-error-email mbs"></div>
+    <%= f.submit "JOIN OUR FAMILY", class: "btn btn-default full-width braxs js-user-signup" %>
+  <% end %>
+</div>

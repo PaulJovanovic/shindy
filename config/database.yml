@@ -1,0 +1,5 @@
+development:
+  adapter: mysql2
+  database: shindy_dev
+  pool: 5
+  timeout: 5000

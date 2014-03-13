@@ -1,0 +1,48 @@
+.video-container {
+  height: 0;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+
+  iframe, object, embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.ribbon {
+  -moz-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.5);
+  left: -55px;
+  right: -55px;
+  position: absolute;
+  top: 0px;
+  width: auto;
+
+  &:before {
+    border-color: $shade12 transparent transparent transparent;
+    position: absolute;
+    display: block;
+    border-style: solid;
+    bottom: -40px;
+    content: '';
+    left: 0;
+    border-width: 40px 0 0 40px;
+  }
+
+  &:after {
+    border-color: $shade12 transparent transparent transparent;
+    position: absolute;
+    display: block;
+    border-style: solid;
+    bottom: -40px;
+    content: '';
+    right: 0;
+    border-width: 40px 40px 0 0;
+  }
+}
